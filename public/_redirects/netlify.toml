@@ -1,6 +1,0 @@
-## netlify.toml
-[[redirects]]
-  from = "/services"
-  to = "http://svcs.ebay.com"
-  status = 200
-  force = true

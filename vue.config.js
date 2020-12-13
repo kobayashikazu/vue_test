@@ -1,9 +1,5 @@
 module.exports = {
     devServer: {
-      proxy: { 
-      "/services/": { 
-        target : "http://svcs.ebay.com",
-        }
-      }
+      proxy: "http://svcs.ebay.com",
     }
-};
+  };

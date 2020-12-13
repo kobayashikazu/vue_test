@@ -4,7 +4,7 @@ module.exports = {
             '/services/': {
                 target: 'http://svcs.ebay.com',
                 pathRewrite: {'^/services/': ''},
-                changeOrigin: true
+                changeOrigin: true,
             }
         }
     }

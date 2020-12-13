@@ -1,2 +1,5 @@
 [[redirects]]
-/services/*  http://svcs.ebay.com:splat  200
+  from = "/services"
+  to = "http://svcs.ebay.com"
+  status = 200
+  force = true

@@ -1,7 +1,7 @@
 module.exports = {
     devServer: {
         proxy: {
-            '/services': {
+            '/services/': {
                 target: 'http://svcs.ebay.com',
                 changeOrigin: true
             }

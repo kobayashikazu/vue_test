@@ -1,9 +1,11 @@
 module.exports = {
-  devServer: {
-    proxy: {
-      "/services/": {
-        target:  process.env.USE_LOCAL_SERVER ? 'https://stoic-kare-a632f2.netlify.app' : 'http://svcs.ebay.com',
-      }
+    devServer: {
+        proxy: {
+            '/services/': {
+                target: 'http://svcs.ebay.com',
+                ws: true,
+                changeOrigin: true
+            }
+        }
     }
-  }
-};
+}  

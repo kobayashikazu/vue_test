@@ -3,6 +3,7 @@ module.exports = {
         proxy: {
             '/services/': {
                 target: 'http://svcs.ebay.com',
+                pathRewrite: {'^/services/': ''},
                 changeOrigin: true
             }
         }
